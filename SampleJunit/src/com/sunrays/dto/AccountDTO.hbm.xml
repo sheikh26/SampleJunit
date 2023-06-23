@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.Galaxy.dto">
+	<class name="AccountDTO" table="account">
+		<id name="id" column="ID">
+			<generator class="increment"></generator>
+		</id>
+
+		<property name="name" column="NAME" />
+		<property name="number" column="NUMBER" />
+		<property name="type" column="TYPE" />
+		<property name="balance" column="BALANCE" />
+		
+	</class>
+</hibernate-mapping>
